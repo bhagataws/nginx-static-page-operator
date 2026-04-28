@@ -172,7 +172,7 @@ func (r *NginxStaticPageReconciler) Reconcile(ctx context.Context, req ctrl.Requ
 			log.Error(err, "Failed to update Deployment", "name", existingDeployment.Name)
 			return ctrl.Result{}, err
 		}
-		if !page.ObjectMeta.DeletionTimestamp.IsZero() {
+		if !page.DeletionTimestamp.IsZero() {
 			log.Info("Deleting NginxStaticPage", "name", page.Name, "namespace", page.Namespace)
 			// do cleanup if needed
 			controllerutil.RemoveFinalizer(&page, finalizerName)
