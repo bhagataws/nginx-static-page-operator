@@ -45,10 +45,9 @@ spec:
                 format: int32
                 type: integer
               staticContent:
-                description: |-
-                  foo is an example field of NginxStaticPage. Edit nginxstaticpage_types.go to remove/update
-                  Foo *string `json:"foo,omitempty"`
                 type: string
+            required:
+            - staticContent
             type: object
           status:
             description: status defines the observed state of NginxStaticPage

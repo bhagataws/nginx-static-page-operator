@@ -25,16 +25,8 @@ import (
 
 // NginxStaticPageSpec defines the desired state of NginxStaticPage
 type NginxStaticPageSpec struct {
-	// INSERT ADDITIONAL SPEC FIELDS - desired state of cluster
-	// Important: Run "make" to regenerate code after modifying this file
-	// The following markers will use OpenAPI v3 schema to validate the value
-	// More info: https://book.kubebuilder.io/reference/markers/crd-validation.html
-
-	// foo is an example field of NginxStaticPage. Edit nginxstaticpage_types.go to remove/update
-	// +optional
-	//Foo *string `json:"foo,omitempty"`
 	StaticContent string `json:"staticContent"`
-	replicaCount  *int32 `json:"replicaCount,omitempty"`
+	ReplicaCount  *int32 `json:"replicaCount,omitempty"`
 }
 
 // NginxStaticPageStatus defines the observed state of NginxStaticPage.
