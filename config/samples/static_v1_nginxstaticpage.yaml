@@ -1,0 +1,9 @@
+apiVersion: static.cafeco.io/v1
+kind: NginxStaticPage
+metadata:
+  labels:
+    app.kubernetes.io/name: nginx-static-page
+    app.kubernetes.io/managed-by: kustomize
+  name: nginxstaticpage-sample
+spec:
+  # TODO(user): Add fields here

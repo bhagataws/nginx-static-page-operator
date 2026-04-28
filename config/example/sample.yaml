@@ -1,0 +1,12 @@
+apiVersion: static.cafeco.io/v1
+kind: NginxStaticPage
+metadata:
+  name: my-page
+spec:
+  staticContent: |
+    <html>
+      <body>
+        <h1>Hello from ConfigMap</h1>
+      </body>
+    </html>
+  replicaCount: 2

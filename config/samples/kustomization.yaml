@@ -1,0 +1,4 @@
+## Append samples of your project ##
+resources:
+- static_v1_nginxstaticpage.yaml
+# +kubebuilder:scaffold:manifestskustomizesamples
