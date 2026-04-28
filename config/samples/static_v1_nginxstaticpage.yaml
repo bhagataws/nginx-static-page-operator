@@ -1,9 +1,12 @@
 apiVersion: static.cafeco.io/v1
 kind: NginxStaticPage
 metadata:
-  labels:
-    app.kubernetes.io/name: nginx-static-page
-    app.kubernetes.io/managed-by: kustomize
-  name: nginxstaticpage-sample
+  name: my-page
 spec:
-  # TODO(user): Add fields here
+  staticContent: |
+    <html>
+      <body>
+        <h1>Hello from nginx static page operator</h1>
+      </body>
+    </html>
+  replicaCount: 2
